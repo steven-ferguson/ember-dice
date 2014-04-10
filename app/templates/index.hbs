@@ -1,5 +1,21 @@
-<ul>
-{{#each}}
-  <li>{{this}}</li>
-{{/each}}
-</ul>
+<h2 id='title'>Ember Dice</h2>
+
+<section class='scoreboard'>
+  <article class='player-score'>
+    Player 1: 10 points
+  </article>
+  <article class='player-score'>
+    Player 2: 20 points
+  </article>
+</section>
+
+<section class='instructions'>
+  <p>Click on the dice you want to roll</p>
+</section>
+
+{{ dice-component dice=model }}
+
+<section class='action-buttons'>
+  <button>Roll</button>
+  <button>End Turn</button>
+</section>
