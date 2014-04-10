@@ -9,16 +9,10 @@ module('Acceptances - Index', {
   }
 });
 
-test('index renders', function(){
-  expect(3);
-
-  visit('/').then(function(){
-    var title = find('h2#title');
-    var list = find('ul li');
-
-    equal(title.text(), 'Welcome to Ember.js');
-
-    equal(list.length, 3);
-    equal(list.text(), 'redyellowblue');
+test('select a die', function(){
+  visit('/');
+  click('.die');
+  andThen(function() {
+    equal(find(".die.is-selected").length, 1, 'There should be a die selected');
   });
 });
