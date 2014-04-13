@@ -11,6 +11,7 @@
 
 <section class='instructions'>
   <p>Click on the dice you want to roll</p>
+  <p>Re-rolls remaining this turn: {{remainingRolls}} </p>
 </section>
 
 <section class='dice'>
@@ -21,7 +22,7 @@
 </section>
 
 <section class='action-buttons'>
-  <button {{ action 'roll' }}>Roll</button>
+  <button {{ action 'roll' }} {{bindAttr disabled="anyReRolls"}}>Roll</button>
   <button>End Turn</button>
 </section>
 
