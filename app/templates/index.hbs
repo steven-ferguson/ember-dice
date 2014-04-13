@@ -13,4 +13,15 @@
   <p>Click on the dice you want to roll</p>
 </section>
 
-{{ dice-component dice=model }}
+<section class='dice'>
+  {{#each itemController='index/die'}}
+    <article {{bind-attr class=':die textValue isSelected'}} {{action "toggleSelected"}}>
+    </article>
+  {{/each}}
+</section>
+
+<section class='action-buttons'>
+  <button {{ action 'roll' }}>Roll</button>
+  <button>End Turn</button>
+</section>
+
