@@ -1,7 +1,7 @@
 <section class='scoreboard'>
   {{#each participations}}
     <article class='player-score'>
-      {{player.firstName}}: {{score}}
+      <span {{bind-attr class="isCurrentPlayer"}}>{{player.firstName}}</span>: {{score}}
     </article>
   {{/each}}
 </section>
