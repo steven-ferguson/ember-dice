@@ -15,6 +15,7 @@ export default Ember.Component.extend({
         return previousValue + die.value
       }, 0);
       this.set('score', score);
+      this.sendAction('action', score);
     }
   }
 });

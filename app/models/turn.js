@@ -8,8 +8,7 @@ Turn.FIXTURES = [
   {
     id: 1,
     participation: 1,
-    game: 1,
-    score: 40
+    game: 1
   }
 ];
 
