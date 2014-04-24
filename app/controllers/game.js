@@ -16,6 +16,7 @@ export default Ember.ObjectController.extend({
       });
       newTurn.save();
       game.get('turns').addObject(newTurn);
+      this.set('dice', [Die.create(), Die.create(), Die.create(), Die.create(), Die.create()]);
     }
   }
 });
