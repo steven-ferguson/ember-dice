@@ -1,3 +1,5 @@
+<p>Your score: {{score}}</p>
+
 <section class='dice'>
   {{#each die in dice}}
     {{die-component value=die.textValue}}
@@ -5,6 +7,6 @@
 </section>
 
 <section class='action-buttons'>
-  <button {{ action 'roll' }}>Roll</button>
-  <button>End Turn</button>
+  <button {{action 'roll' }}>Roll</button>
+  <button {{action 'scoreDice'}}>Score</button>
 </section>

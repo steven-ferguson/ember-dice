@@ -1,4 +1,8 @@
+import Die from "appkit/models/die";
+
 export default Ember.ObjectController.extend({
+  dice: [Die.create(), Die.create(), Die.create(), Die.create(), Die.create()],
+
   actions: {
     newTurn: function() {
       var game, participant, newTurn;
