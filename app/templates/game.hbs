@@ -1,9 +1,5 @@
-{{player-scoreboard participations = model.participations }}
-<p>Number of Players: {{model.numberOfParticipants}}</p>
-<p>Current Player: {{currentParticipant.player.firstName}}</p>
-<p>Next Player: {{nextParticipant.player.firstName}}</p>
+{{player-scoreboard participations = model.participations currentParticipation=model.currentParticipant }}
 
-<p>Turns: {{model.numberOfTurns}}</p>
 {{game-turn turn=model.currentTurn}}
 
 <button {{action 'newTurn' }}>End Turn</button>
