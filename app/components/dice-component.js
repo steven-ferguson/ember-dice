@@ -16,7 +16,6 @@ export default Ember.Component.extend({
     scoreDice: function() {
       var score;
       score = this.get('selectedDice').reduce(function(previousValue, die) {
-        console.log(die.isSelected);
         return previousValue + die.value;
       }, 0);
       this.set('score', score);

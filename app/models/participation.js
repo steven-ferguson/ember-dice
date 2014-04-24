@@ -2,7 +2,7 @@ var Participation = DS.Model.extend({
   player: DS.belongsTo('player', {async: true}),
   turns: DS.hasMany('turn', {async: true}),
   game: DS.belongsTo('game', {async: true}),
-  score: DS.attr('string'),
+  score: DS.attr('number'),
   isCurrentPlayer: function() {
     return this.get('game.currentParticipant.id') === this.get('id');
   }.property('game.currentParticipant.id', 'id')
