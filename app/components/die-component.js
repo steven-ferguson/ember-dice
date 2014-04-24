@@ -1,7 +1,7 @@
 export default Ember.Component.extend({
   actions: {
     toggleSelected: function() {
-      this.toggleProperty('isSelected');
+      this.get('die').toggleProperty('isSelected');
     }
   }
 });

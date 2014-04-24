@@ -1,5 +1,9 @@
 export default Ember.Object.extend({
-  value: 5,
+  init: function() {
+    var value = this.roll();
+  },
+
+  value: 1,
 
   isSelected: false,
 
