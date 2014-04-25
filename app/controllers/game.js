@@ -12,10 +12,10 @@ export default Ember.ObjectController.extend({
   },
 
   scoreTurn: function() {
-    var game = this.get('model');
-    var score = game.get('currentTurn').get('score');
-    console.log(score);
-    var participant = game.get('currentParticipant');
+    var game, score, participant;
+    game = this.get('model');
+    score = game.get('currentTurn').get('score');
+    participant = game.get('currentParticipant');
     participant.incrementProperty('score', score);
   },
 
