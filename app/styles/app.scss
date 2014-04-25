@@ -7,8 +7,16 @@ html, body {
     margin: 20px;
 }
 
+div.container {
+  @include outer-container;
+}
+
 .scoreboard {
   margin-bottom: 10px;
+}
+
+.inline {
+  display: inline-block;
 }
 
 .dice {

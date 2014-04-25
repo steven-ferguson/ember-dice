@@ -1,10 +1,7 @@
 <section class='dice'>
   {{#each die in dice}}
-    {{die-component die=die}}
+    <div class='inline'>
+      {{die-component die=die}}
+    </div>
   {{/each}}
-</section>
-
-<section class='action-buttons'>
-  <button {{action 'roll' }}>Roll</button>
-  <button {{action 'scoreDice'}}>Score</button>
 </section>

@@ -1,8 +1,5 @@
 {{player-scoreboard participations = model.participations currentParticipation=model.currentParticipant }}
 
-{{game-turn turn=model.currentTurn dice=dice}}
-
-<button {{action 'endTurn' }}>End Turn</button>
-
+{{game-turn turn=model.currentTurn dice=dice action="endTurn"}}
 
 {{outlet}}

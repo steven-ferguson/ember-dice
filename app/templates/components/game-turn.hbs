@@ -2,3 +2,9 @@
 <p>Score: {{turn.score}}</p>
 
 {{dice-component dice=dice action="updateScore"}}
+
+<section class='action-buttons'>
+  <button {{action 'roll' }}>Roll</button>
+  <button {{action 'scoreDice'}}>Score</button>
+  <button {{action 'endTurn' }}>End Turn</button>
+</section>
