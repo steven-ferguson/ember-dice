@@ -13,7 +13,7 @@ Participation.FIXTURES = [
     id: 1,
     player: 1,
     game: 1,
-    score: 10
+    score: 0
   },
   {
     id: 2,
